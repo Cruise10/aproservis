@@ -1,47 +1,26 @@
 ---
 import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Servicios from '../components/Servicios.astro';
+import Proyectos from '../components/Proyectos.astro';
 import Layout from '../layouts/Layout.astro';
+import Soluciones from '../components/Soluciones.astro';
+import QueHacemos from '../components/QueHacemos.astro';
+import Destacar from '../components/Destacar.astro';
 ---
 
 <Layout>
 	
 <Navbar />
-<section class="hero">
+<Hero />
+<Soluciones />
 
-  <h1>Diseño y Construcción de Proyectos Modernos</h1>
 
-  <p>Especialistas en construcción, arquitectura y remodelaciones.</p>
+<QueHacemos />
 
-  <div class="hero-buttons">
-	  <a href="#" class="btn-secondary">Ver Proyectos</a>
-    <a href="#" class="btn-primary">Solicitar Cotización</a>
-  </div>
+<Destacar />
 
-</section>
+<Proyectos />
 
-<section class="servicios">
-
-<h2>Nuestros Servicios</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Construcción</h3>
-<p>Edificios, casas y obras civiles.</p>
-</div>
-
-<div class="card">
-<h3>Arquitectura</h3>
-<p>Diseños modernos.</p>
-</div>
-
-<div class="card">
-<h3>Remodelación</h3>
-<p>Renovamos espacios.</p>
-</div>
-
-</div>
-
-</section>
 
 </Navbar>
