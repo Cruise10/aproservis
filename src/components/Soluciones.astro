@@ -5,47 +5,284 @@
     <!-- LADO IZQUIERDO: TEXTO -->
     <div class="soluciones-texto">
 
-      <!-- Subtitulo pequeño -->
-      <span class="subtitulo-seccion">NUESTRAS SOLUCIONES</span>
+      <span class="subtitulo-seccion">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        NUESTRAS SOLUCIONES
+      </span>
 
-      <!-- Titulo principal -->
-      <h2>Soluciones innovadoras para las necesidades de construcción</h2>
+      <h2>Soluciones integrales en construcción y servicios industriales</h2>
 
-      <!-- Descripción -->
       <p class="descripcion">
-        Ofrecemos servicios integrales de construcción, arquitectura y
-        remodelación, combinando experiencia, tecnología y diseño moderno
-        para crear proyectos de alta calidad.
+        APROSERVIS es una empresa comprometida con la calidad, seguridad y mejora continua,
+        ofreciendo servicios especializados en construcciones civiles, industriales y mecánicas.
       </p>
 
-      <!-- Características -->
       <div class="features">
 
         <div class="feature">
-          <h3>Diseño Arquitectónico</h3>
-          <p>
-            Creamos diseños funcionales y modernos adaptados a las
-            necesidades de cada proyecto.
-          </p>
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <h3>Diseño Arquitectónico</h3>
+            <p>Creamos diseños funcionales y modernos adaptados a las necesidades de cada proyecto.</p>
+          </div>
         </div>
 
         <div class="feature">
-          <h3>Construcción de Calidad</h3>
-          <p>
-            Utilizamos materiales de alta calidad y procesos eficientes
-            para garantizar resultados duraderos.
-          </p>
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div>
+            <h3>Construcción de Calidad</h3>
+            <p>Materiales de alta calidad y procesos eficientes para garantizar resultados duraderos.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <div>
+            <h3>Servicios Industriales</h3>
+            <p>Soluciones mecánicas e industriales con los más altos estándares de seguridad.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3>Garantía y Seguridad</h3>
+            <p>Comprometidos con la mejora continua y la seguridad en cada etapa del proyecto.</p>
+          </div>
         </div>
 
       </div>
+
+      <a href="/servicios" class="btn-soluciones">
+        Ver todos los servicios
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
 
     </div>
 
     <!-- LADO DERECHO: IMAGEN -->
     <div class="soluciones-imagen">
-      <img src="/images/soluciones-modernas.webp" alt="Proyecto de construcción moderno">
+      <img src="/images/soluciones-modernas.webp" alt="Proyecto de construcción moderno" loading="lazy">
+      <!-- Badge flotante -->
+      <div class="badge-flotante">
+        <strong>+200</strong>
+        <span>Proyectos<br>completados</span>
+      </div>
     </div>
 
   </div>
 
 </section>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+  .soluciones {
+    padding: 100px 20px;
+    background: #f5f5f5;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .container-soluciones {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    background: white;
+  }
+
+  /* LADO IZQUIERDO */
+  .soluciones-texto {
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: white;
+  }
+
+  /* SUBTÍTULO */
+  .subtitulo-seccion {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-naranja);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  /* TÍTULO */
+  .soluciones-texto h2 {
+    font-size: clamp(22px, 2.8vw, 32px);
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.25;
+    margin: 0 0 20px;
+    letter-spacing: -0.5px;
+  }
+
+  /* DESCRIPCIÓN */
+  .descripcion {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin: 0 0 36px;
+  }
+
+  /* FEATURES */
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .feature {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .feature-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    background: rgba(246, 127, 35, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-naranja);
+  }
+
+  .feature h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 5px;
+  }
+
+  .feature p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* BOTÓN */
+  .btn-soluciones {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: var(--color-naranja);
+    color: white;
+    padding: 13px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    width: fit-content;
+    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+    box-shadow: 0 4px 16px rgba(246, 127, 35, 0.35);
+  }
+
+  .btn-soluciones:hover {
+    background: #d96a10;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(246, 127, 35, 0.45);
+  }
+
+  .btn-soluciones svg { transition: transform 0.25s; }
+  .btn-soluciones:hover svg { transform: translateX(4px); }
+
+  /* LADO DERECHO: IMAGEN */
+  .soluciones-imagen {
+    position: relative;
+    min-height: 500px;
+  }
+
+  .soluciones-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Badge flotante */
+  .badge-flotante {
+    position: absolute;
+    bottom: 32px;
+    left: -28px;
+    background: white;
+    border-radius: 12px;
+    padding: 16px 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .badge-flotante strong {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--color-naranja);
+    line-height: 1;
+  }
+
+  .badge-flotante span {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .container-soluciones {
+      grid-template-columns: 1fr;
+    }
+
+    .soluciones-imagen {
+      min-height: 300px;
+      order: -1; /* imagen arriba en móvil */
+    }
+
+    .badge-flotante {
+      left: 20px;
+      bottom: 20px;
+    }
+
+    .soluciones-texto {
+      padding: 40px 28px;
+    }
+
+    .features {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .soluciones {
+      padding: 60px 16px;
+    }
+
+    .soluciones-texto {
+      padding: 32px 20px;
+    }
+  }
+</style>

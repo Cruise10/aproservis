@@ -1,48 +1,339 @@
 <section class="lo-que-hacemos">
   <div class="container-lo-que-hacemos">
-<!-- TEXTO SUPERIOR -->
-<span class="subtitulo">PROYECTOS DESTACADOS</span>
 
-    <!-- Título y descripción -->
-    <div class="titulo-descripcion">
-      <h2>Lo que hemos hecho</h2>
+    <!-- ENCABEZADO -->
+    <div class="lqh-header">
+      <span class="subtitulo">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        PROYECTOS DESTACADOS
+      </span>
+      <h2>Lo que hemos <em>hecho</em></h2>
       <p>
-        Ofrecemos soluciones completas para la construcción y remodelación, 
+        Ofrecemos soluciones completas para la construcción y remodelación,
         combinando innovación, calidad y diseño moderno en cada proyecto.
       </p>
     </div>
 
-    <!-- Grid de 6 elementos -->
+    <!-- GRID GALERÍA -->
     <div class="grid-lo-que-hacemos">
-      <div class="item">
-        <img src="/images/proyectos/proyecto1.png" alt="Proyecto 1">
+
+      <div class="item item-grande">
+        <img src="/images/proyectos/proyecto1.png" alt="Proyecto 1" loading="lazy">
+        <div class="item-overlay">
+          <span class="item-tag">Construcción Civil</span>
+          <h3>Proyecto 1</h3>
+          <p>Descripción breve del proyecto realizado.</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="/images/proyectos/proyecto2.png" alt="Proyecto 2">
+        <img src="/images/proyectos/proyecto2.png" alt="Proyecto 2" loading="lazy">
+        <div class="item-overlay">
+          <span class="item-tag">Diseño</span>
+          <h3>Proyecto 2</h3>
+          <p>Descripción breve del proyecto realizado.</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="/images/proyectos/proyecto3.png" alt="Proyecto 3">
+        <img src="/images/proyectos/proyecto3.png" alt="Proyecto 3" loading="lazy">
+        <div class="item-overlay">
+          <span class="item-tag">Remodelación</span>
+          <h3>Proyecto 3</h3>
+          <p>Descripción breve del proyecto realizado.</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="/images/proyectos/proyecto4.png" alt="Proyecto 4">
+        <img src="/images/proyectos/proyecto4.png" alt="Proyecto 4" loading="lazy">
+        <div class="item-overlay">
+          <span class="item-tag">Industrial</span>
+          <h3>Proyecto 4</h3>
+          <p>Descripción breve del proyecto realizado.</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="/images/proyectos/proyecto5.png" alt="Proyecto 5">        
+        <img src="/images/proyectos/proyecto5.png" alt="Proyecto 5" loading="lazy">
+        <div class="item-overlay">
+          <span class="item-tag">Obra Civil</span>
+          <h3>Proyecto 5</h3>
+          <p>Descripción breve del proyecto realizado.</p>
+        </div>
       </div>
 
-      <div class="item">
-        <img src="/images/proyectos/proyecto6.png" alt="Proyecto 6">        
+      <div class="item item-ancho">
+        <img src="/images/proyectos/proyecto6.png" alt="Proyecto 6" loading="lazy">
+        <div class="item-overlay">
+          <span class="item-tag">Arquitectura</span>
+          <h3>Proyecto 6</h3>
+          <p>Descripción breve del proyecto realizado.</p>
+        </div>
       </div>
+
     </div>
 
-    <!-- Botón -->
+    <!-- BOTÓN -->
     <div class="boton-final">
-      <a href="#contacto" class="btn-primary">Contáctanos</a>
+      <a href="/proyectos" class="btn-lqh">
+        Ver todos los proyectos
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="/contacto" class="btn-lqh-sec">
+        Contáctanos
+      </a>
     </div>
 
   </div>
 </section>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+  .lo-que-hacemos {
+    padding: 100px 20px;
+    background: #f5f5f5;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .container-lo-que-hacemos {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  /* ENCABEZADO */
+  .lqh-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .subtitulo {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-naranja);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .lqh-header h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+    margin: 0 0 16px;
+  }
+
+  .lqh-header h2 em {
+    font-style: normal;
+    color: var(--color-naranja);
+  }
+
+  .lqh-header p {
+    max-width: 560px;
+    margin: 0 auto;
+    color: #777;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* GRID MASONRY-STYLE */
+  .grid-lo-que-hacemos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 260px 260px;
+    gap: 16px;
+  }
+
+  /* Item grande ocupa 2 filas */
+  .item-grande {
+    grid-row: span 2;
+  }
+
+  /* Item ancho ocupa 2 columnas */
+  .item-ancho {
+    grid-column: span 2;
+  }
+
+  /* ITEM BASE */
+  .item {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ddd;
+    cursor: pointer;
+  }
+
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .item:hover img {
+    transform: scale(1.07);
+  }
+
+  /* OVERLAY con info */
+  .item-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 6px;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+
+  .item:hover .item-overlay {
+    opacity: 1;
+  }
+
+  .item-tag {
+    display: inline-block;
+    background: var(--color-naranja);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+    width: fit-content;
+  }
+
+  .item-overlay h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .item-overlay p {
+    color: rgba(255,255,255,0.75);
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* BOTONES */
+  .boton-final {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .btn-lqh {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: var(--color-naranja);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+    box-shadow: 0 4px 16px rgba(246, 127, 35, 0.35);
+  }
+
+  .btn-lqh:hover {
+    background: #d96a10;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(246, 127, 35, 0.45);
+  }
+
+  .btn-lqh svg { transition: transform 0.25s; }
+  .btn-lqh:hover svg { transform: translateX(4px); }
+
+  .btn-lqh-sec {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: transparent;
+    color: #333;
+    padding: 14px 28px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: border-color 0.25s, color 0.25s, transform 0.2s;
+  }
+
+  .btn-lqh-sec:hover {
+    border-color: var(--color-naranja);
+    color: var(--color-naranja);
+    transform: translateY(-2px);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .grid-lo-que-hacemos {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 220px);
+    }
+
+    .item-grande {
+      grid-row: span 1;
+      grid-column: span 2;
+    }
+
+    .item-ancho {
+      grid-column: span 2;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .lo-que-hacemos {
+      padding: 64px 16px;
+    }
+
+    .lqh-header {
+      margin-bottom: 36px;
+    }
+
+    .grid-lo-que-hacemos {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    .item {
+      height: 220px;
+    }
+
+    .item-grande,
+    .item-ancho {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    /* Overlay siempre visible en móvil (no hay hover) */
+    .item-overlay {
+      opacity: 1;
+    }
+
+    .boton-final {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .btn-lqh,
+    .btn-lqh-sec {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

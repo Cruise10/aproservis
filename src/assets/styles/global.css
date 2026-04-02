@@ -47,7 +47,7 @@ color:black;
 height:90vh;
 background:
 linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-url("/images/banner.jpg");
+url("/images/banner-principal.webp");
 
 background-size:cover;
 background-position:center;
@@ -277,35 +277,8 @@ z-index:10;
 
 /* CUADRO PRINCIPAL */
 
-/* .container-soluciones{
-max-width:1200px;
-margin-top: -180px;
-display:grid;
-grid-template-columns:1fr 1fr;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 15px 40px rgba(0,0,0,0.1);
-background:white;
-
-position:relative;
-top:-180px;
-} */ 
-
-
-
-
 /* LADO IZQUIERDO */
 
-.soluciones-texto{
-padding:60px;
-background:rgba(255,106,0,0.08); /* naranja suave */
-}
-
-.soluciones-texto h2{
-font-size:38px;
-margin-bottom:20px;
-color:#222;
-}
 
 .descripcion{
 font-size:17px;
@@ -365,7 +338,7 @@ background:rgba(255,106,0,0.08); /* naranja suave */
 }
 
 .soluciones-texto h2{
-font-size:38px;
+font-size:30px;
 margin-bottom:20px;
 color:#222;
 }
@@ -739,6 +712,11 @@ font-size:42px;
 margin:15px 0;
 }
 
+.cta-info .subtitulo{
+  text-align: left;
+  display: block;
+}
+
 .cta-info p{
 color:#ddd;
 line-height:1.6;
@@ -750,7 +728,14 @@ max-width:500px;
 
 .cta-botones{
 display:flex;
-gap:15px;
+gap:20px;
+align-items:center;
+}
+
+.cta-botones a{
+display:flex;
+align-items:center;
+gap:10px;
 }
 
 .btn-primario{
