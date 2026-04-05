@@ -1,0 +1,530 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import CtaContacto from '../components/CtaContacto.astro';
+---
+
+<Layout title="Contacto — APROSERVIS" description="Contáctanos para solicitar una cotización. Estamos en Comarapa, Bolivia.">
+
+  <Navbar />
+
+  <!-- HERO INTERNO -->
+  <section class="page-hero">
+    <div class="overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        CONTÁCTANOS
+      </span>
+      <h1>Hablemos de tu <em>proyecto</em></h1>
+      <p>Estamos listos para ser tu aliado. Cuéntanos qué necesitas y te respondemos en menos de 24 horas.</p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PRINCIPAL -->
+  <section class="contacto">
+    <div class="container-contacto">
+
+      <!-- GRID: INFO + FORMULARIO -->
+      <div class="contacto-grid">
+
+        <!-- INFO IZQUIERDA -->
+        <div class="contacto-info">
+
+          <h2>¿Cómo podemos <em>ayudarte?</em></h2>
+          <p>Contamos con recursos humanos de amplia experiencia, infraestructura, herramientas y equipos aplicados a construcciones civiles, industriales y mecánicas.</p>
+
+          <!-- DATOS DE CONTACTO -->
+          <div class="datos">
+
+            <div class="dato">
+              <div class="dato-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Dirección</h4>
+                <p>Av. Principal 123, Comarapa<br>Santa Cruz, Bolivia</p>
+              </div>
+            </div>
+
+            <div class="dato">
+              <div class="dato-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4>Teléfono</h4>
+                <p><a href="tel:+59171234567">+591 71234567</a></p>
+              </div>
+            </div>
+
+            <div class="dato">
+              <div class="dato-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4>Correo</h4>
+                <p><a href="mailto:info@aproservis.com">info@aproservis.com</a></p>
+              </div>
+            </div>
+
+            <div class="dato">
+              <div class="dato-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4>Horario</h4>
+                <p>Lunes a Viernes: 8:00 — 18:00<br>Sábados: 8:00 — 12:00</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- BOTÓN WHATSAPP -->
+          <a href="https://wa.me/59171234567" target="_blank" class="btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.885a.5.5 0 0 0 .609.61l6.098-1.456A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 11.999 0zm0 21.818a9.818 9.818 0 0 1-5.013-1.376l-.36-.214-3.724.889.916-3.636-.234-.373A9.818 9.818 0 1 1 12 21.818z"/></svg>
+            Escribir por WhatsApp
+          </a>
+
+        </div>
+
+        <!-- FORMULARIO DERECHA -->
+        <div class="contacto-form">
+
+          <div class="form-header">
+            <h3>Solicita tu cotización</h3>
+            <p>Sin compromisos. Te respondemos en menos de 24 horas.</p>
+          </div>
+
+          <form id="form-contacto">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre completo *</label>
+                <div class="input-wrap">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="empresa">Empresa (opcional)</label>
+                <div class="input-wrap">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Correo electrónico *</label>
+                <div class="input-wrap">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <div class="input-wrap">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <input type="tel" id="telefono" name="telefono" placeholder="+591 7000 0000" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="servicio">Servicio de interés</label>
+              <div class="input-wrap select-wrap">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                <select id="servicio" name="servicio">
+                  <option value="">Selecciona un servicio</option>
+                  <option>Construcción Civil</option>
+                  <option>Estructuras Metálicas</option>
+                  <option>Ingeniería de Detalle</option>
+                  <option>Soldadura para Alta Presión</option>
+                  <option>Pintado Industrial</option>
+                  <option>Sistemas Contra Incendio</option>
+                  <option>Pruebas Hidrostáticas</option>
+                  <option>Provisión de Servicios</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Descripción del proyecto *</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto: ubicación, dimensiones, plazos, etc." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">
+              Enviar solicitud
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <CtaContacto />
+  <Footer />
+
+</Layout>
+
+<style>
+  /* ── HERO INTERNO ── */
+  .page-hero {
+    position: relative;
+    height: 340px;
+    background: url("/images/cta-footer/subfooter.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 72px;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    padding: 0 20px;
+  }
+
+  .page-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-naranja);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .page-hero-content h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 800;
+    margin: 0 0 14px;
+    letter-spacing: -0.5px;
+  }
+
+  .page-hero-content h1 em {
+    font-style: normal;
+    color: var(--color-naranja);
+  }
+
+  .page-hero-content p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* ── SECCIÓN CONTACTO ── */
+  .contacto {
+    padding: 80px 20px;
+    background: #f5f5f5;
+  }
+
+  .container-contacto {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  /* ── INFO ── */
+  .contacto-info h2 {
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+    margin: 0 0 16px;
+    line-height: 1.2;
+  }
+
+  .contacto-info h2 em {
+    font-style: normal;
+    color: var(--color-naranja);
+  }
+
+  .contacto-info > p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+    margin: 0 0 36px;
+  }
+
+  .datos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+
+  .dato {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .dato-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    background: rgba(246,127,35,0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-naranja);
+  }
+
+  .dato h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .dato p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .dato p a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.25s;
+  }
+
+  .dato p a:hover {
+    color: var(--color-naranja);
+  }
+
+  .btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.25s, transform 0.2s;
+    box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+  }
+
+  .btn-whatsapp:hover {
+    background: #1da851;
+    transform: translateY(-2px);
+  }
+
+  /* ── FORMULARIO ── */
+  .contacto-form {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+  }
+
+  .form-header {
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .form-header h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0 0 6px;
+  }
+
+  .form-header p {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+  }
+
+  .input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .input-wrap svg {
+    position: absolute;
+    left: 13px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .input-wrap input,
+  .input-wrap select {
+    width: 100%;
+    padding: 11px 14px 11px 40px;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    color: #333;
+    background: #fafafa;
+    transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .input-wrap input:focus,
+  .input-wrap select:focus {
+    outline: none;
+    border-color: var(--color-naranja);
+    box-shadow: 0 0 0 3px rgba(246,127,35,0.12);
+    background: white;
+  }
+
+  /* Flecha select */
+  .select-wrap::after {
+    content: '▾';
+    position: absolute;
+    right: 14px;
+    color: #aaa;
+    pointer-events: none;
+    font-size: 13px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    color: #333;
+    background: #fafafa;
+    resize: vertical;
+    min-height: 130px;
+    transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
+    box-sizing: border-box;
+  }
+
+  textarea:focus {
+    outline: none;
+    border-color: var(--color-naranja);
+    box-shadow: 0 0 0 3px rgba(246,127,35,0.12);
+    background: white;
+  }
+
+  .btn-enviar {
+    background: var(--color-naranja);
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+    box-shadow: 0 4px 16px rgba(246,127,35,0.35);
+  }
+
+  .btn-enviar:hover {
+    background: #d96a10;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(246,127,35,0.45);
+  }
+
+  .btn-enviar svg { transition: transform 0.25s; }
+  .btn-enviar:hover svg { transform: translateX(4px); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .contacto-grid {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+
+    .page-hero {
+      height: 280px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .contacto {
+      padding: 56px 16px;
+    }
+
+    .contacto-form {
+      padding: 28px 20px;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+
+    .page-hero {
+      height: 260px;
+    }
+
+    .btn-whatsapp {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
