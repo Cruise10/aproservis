@@ -5,11 +5,11 @@ import Footer from '../components/Footer.astro';
 import CtaContacto from '../components/CtaContacto.astro';
 ---
 
-<Layout title="Contacto — APROSERVIS" description="Contáctanos para solicitar una cotización. Estamos en Comarapa, Bolivia.">
+<Layout title="Contacto — APROSERVIS" description="Contáctanos para solicitar una cotización. Estamos en Santa Cruz, Bolivia.">
 
   <Navbar />
 
-  <!-- HERO INTERNO -->
+  <!-- HERO BANNER -->
   <section class="page-hero">
     <div class="overlay"></div>
     <div class="page-hero-content">
@@ -22,76 +22,19 @@ import CtaContacto from '../components/CtaContacto.astro';
     </div>
   </section>
 
-  <!-- SECCIÓN PRINCIPAL -->
+  <!-- SECCIÓN PRINCIPAL: FORMULARIO + MAPA -->
   <section class="contacto">
     <div class="container-contacto">
-
-      <!-- GRID: INFO + FORMULARIO -->
       <div class="contacto-grid">
 
-        <!-- INFO IZQUIERDA -->
-        <div class="contacto-info">
-
-          <h2>¿Cómo podemos <em>ayudarte?</em></h2>
-          <p>Contamos con recursos humanos de amplia experiencia, infraestructura, herramientas y equipos aplicados a construcciones civiles, industriales y mecánicas.</p>
-
-          <!-- DATOS DE CONTACTO -->
-          <div class="datos">
-
-            <div class="dato">
-              <div class="dato-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div>
-                <h4>Dirección</h4>
-                <p>Av. Principal 123, Comarapa<br>Santa Cruz, Bolivia</p>
-              </div>
-            </div>
-
-            <div class="dato">
-              <div class="dato-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </div>
-              <div>
-                <h4>Teléfono</h4>
-                <p><a href="tel:+59171234567">+591 71234567</a></p>
-              </div>
-            </div>
-
-            <div class="dato">
-              <div class="dato-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div>
-                <h4>Correo</h4>
-                <p><a href="mailto:info@aproservis.com">info@aproservis.com</a></p>
-              </div>
-            </div>
-
-            <div class="dato">
-              <div class="dato-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div>
-                <h4>Horario</h4>
-                <p>Lunes a Viernes: 8:00 — 18:00<br>Sábados: 8:00 — 12:00</p>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- BOTÓN WHATSAPP -->
-          <a href="https://wa.me/59171234567" target="_blank" class="btn-whatsapp">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.885a.5.5 0 0 0 .609.61l6.098-1.456A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 11.999 0zm0 21.818a9.818 9.818 0 0 1-5.013-1.376l-.36-.214-3.724.889.916-3.636-.234-.373A9.818 9.818 0 1 1 12 21.818z"/></svg>
-            Escribir por WhatsApp
-          </a>
-
-        </div>
-
-        <!-- FORMULARIO DERECHA -->
+        <!-- IZQUIERDA: FORMULARIO -->
         <div class="contacto-form">
 
           <div class="form-header">
+            <span class="form-label">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              COTIZACIÓN
+            </span>
             <h3>Solicita tu cotización</h3>
             <p>Sin compromisos. Te respondemos en menos de 24 horas.</p>
           </div>
@@ -167,8 +110,75 @@ import CtaContacto from '../components/CtaContacto.astro';
 
         </div>
 
-      </div>
+        <!-- DERECHA: MAPA + INFO -->
+        <div class="contacto-mapa">
 
+          <!-- DATOS RÁPIDOS -->
+          <div class="mapa-datos">
+            <div class="mapa-dato">
+              <div class="dato-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Dirección</h4>
+                <p>Av. Paragua 2do Anillo, Calle los Tucanes #2439, Santa Cruz</p>
+              </div>
+            </div>
+
+            <div class="mapa-dato">
+              <div class="dato-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4>Teléfono</h4>
+                <p><a href="tel:+59175015677">+591 75015677</a></p>
+              </div>
+            </div>
+
+            <div class="mapa-dato">
+              <div class="dato-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4>Horario</h4>
+                <p>Lun–Vie: 8:00–18:00 · Sáb: 8:00–12:00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAPA -->
+          <div class="mapa-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.5!2d-63.1752!3d-17.7633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Paragua+2do+Anillo%2C+Calle+los+Tucanes+2439%2C+Santa+Cruz!5e0!3m2!1ses!2sbo!4v1234567890"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación APROSERVIS">
+            </iframe>
+          </div>
+
+          <!-- BOTONES ACCIONES -->
+          <div class="mapa-acciones">
+            <a href="tel:+59175015677" class="accion-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Llamar
+            </a>
+            <a href="https://wa.me/59175015677" target="_blank" class="accion-btn accion-whatsapp">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.826L.057 23.885a.5.5 0 0 0 .609.61l6.098-1.456A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 11.999 0zm0 21.818a9.818 9.818 0 0 1-5.013-1.376l-.36-.214-3.724.889.916-3.636-.234-.373A9.818 9.818 0 1 1 12 21.818z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://maps.google.com/?q=Av+Paragua+2do+Anillo+Calle+los+Tucanes+2439+Santa+Cruz+Bolivia" target="_blank" class="accion-btn accion-maps">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Cómo llegar
+            </a>
+          </div>
+
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -177,8 +187,8 @@ import CtaContacto from '../components/CtaContacto.astro';
 
 </Layout>
 
-<style>
-  /* ── HERO INTERNO ── */
+<style is:global>
+  /* ── HERO ── */
   .page-hero {
     position: relative;
     height: 340px;
@@ -235,7 +245,7 @@ import CtaContacto from '../components/CtaContacto.astro';
     margin: 0;
   }
 
-  /* ── SECCIÓN CONTACTO ── */
+  /* ── SECCIÓN ── */
   .contacto {
     padding: 80px 20px;
     background: #f5f5f5;
@@ -248,102 +258,9 @@ import CtaContacto from '../components/CtaContacto.astro';
 
   .contacto-grid {
     display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 48px;
-    align-items: start;
-  }
-
-  /* ── INFO ── */
-  .contacto-info h2 {
-    font-size: clamp(24px, 3vw, 34px);
-    font-weight: 800;
-    color: #1a1a1a;
-    letter-spacing: -0.5px;
-    margin: 0 0 16px;
-    line-height: 1.2;
-  }
-
-  .contacto-info h2 em {
-    font-style: normal;
-    color: var(--color-naranja);
-  }
-
-  .contacto-info > p {
-    font-size: 15px;
-    color: #666;
-    line-height: 1.7;
-    margin: 0 0 36px;
-  }
-
-  .datos {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 36px;
-  }
-
-  .dato {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-  }
-
-  .dato-icon {
-    width: 44px;
-    height: 44px;
-    min-width: 44px;
-    background: rgba(246,127,35,0.1);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-naranja);
-  }
-
-  .dato h4 {
-    font-size: 13px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin: 0 0 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .dato p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  .dato p a {
-    color: #666;
-    text-decoration: none;
-    transition: color 0.25s;
-  }
-
-  .dato p a:hover {
-    color: var(--color-naranja);
-  }
-
-  .btn-whatsapp {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #25D366;
-    color: white;
-    padding: 13px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    transition: background 0.25s, transform 0.2s;
-    box-shadow: 0 4px 16px rgba(37,211,102,0.3);
-  }
-
-  .btn-whatsapp:hover {
-    background: #1da851;
-    transform: translateY(-2px);
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: stretch;
   }
 
   /* ── FORMULARIO ── */
@@ -356,8 +273,20 @@ import CtaContacto from '../components/CtaContacto.astro';
 
   .form-header {
     margin-bottom: 28px;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #f0f0f0;
+  }
+
+  .form-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-naranja);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
   }
 
   .form-header h3 {
@@ -376,19 +305,19 @@ import CtaContacto from '../components/CtaContacto.astro';
   form {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 16px;
   }
 
   .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 14px;
   }
 
   .form-group {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 6px;
   }
 
   .form-group label {
@@ -434,7 +363,6 @@ import CtaContacto from '../components/CtaContacto.astro';
     background: white;
   }
 
-  /* Flecha select */
   .select-wrap::after {
     content: '▾';
     position: absolute;
@@ -493,38 +421,163 @@ import CtaContacto from '../components/CtaContacto.astro';
   .btn-enviar svg { transition: transform 0.25s; }
   .btn-enviar:hover svg { transform: translateX(4px); }
 
+  /* ── MAPA ── */
+  .contacto-mapa {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+  }
+
+  /* Datos rápidos */
+  .mapa-datos {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+
+  .mapa-dato {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .dato-icon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    background: rgba(246,127,35,0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-naranja);
+  }
+
+  .mapa-dato h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .mapa-dato p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .mapa-dato p a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.25s;
+  }
+
+  .mapa-dato p a:hover { color: var(--color-naranja); }
+
+  /* Iframe */
+  .mapa-embed {
+    border-radius: 12px;
+    overflow: hidden;
+    height: 500px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    flex: 1;
+  }
+
+  .mapa-embed iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Botones */
+  .mapa-acciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .accion-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 11px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    background: white;
+    color: #444;
+    border: 1.5px solid #e8e8e8;
+    transition: all 0.25s;
+  }
+
+  .accion-btn:hover {
+    border-color: var(--color-naranja);
+    color: var(--color-naranja);
+    transform: translateY(-2px);
+  }
+
+  .accion-whatsapp {
+    background: #25D366;
+    color: white;
+    border-color: #25D366;
+  }
+
+  .accion-whatsapp:hover {
+    background: #1da851;
+    border-color: #1da851;
+    color: white;
+  }
+
+  .accion-maps {
+    background: #1a73e8;
+    color: white;
+    border-color: #1a73e8;
+  }
+
+  .accion-maps:hover {
+    background: #1558b0;
+    border-color: #1558b0;
+    color: white;
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     .contacto-grid {
       grid-template-columns: 1fr;
-      gap: 36px;
+      gap: 32px;
     }
 
-    .page-hero {
-      height: 280px;
-    }
+    .page-hero { height: 280px; }
+    .mapa-embed { height: 360px; }
+    .contacto-mapa { height: auto; }
   }
 
   @media (max-width: 600px) {
-    .contacto {
-      padding: 56px 16px;
-    }
-
-    .contacto-form {
-      padding: 28px 20px;
-    }
+    .contacto { padding: 56px 16px; }
+    .page-hero { height: 240px; }
+    .contacto-form { padding: 28px 20px; }
+    .mapa-embed { height: 280px; }
 
     .form-row {
       grid-template-columns: 1fr;
     }
 
-    .page-hero {
-      height: 260px;
+    .mapa-acciones {
+      grid-template-columns: 1fr 1fr;
     }
 
-    .btn-whatsapp {
-      width: 100%;
-      justify-content: center;
+    .accion-btn:first-child {
+      grid-column: span 2;
     }
   }
 </style>
