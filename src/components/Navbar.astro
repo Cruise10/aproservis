@@ -69,12 +69,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 72px;
+    height: 68px; /* ← altura cómoda en desktop */
   }
 
   /* LOGO */
   .logo img {
-    height: 64px;
+    height: 48px;       /* ← reducido: 64px era demasiado para 72px de header */
     width: auto;
     display: block;
   }
@@ -152,33 +152,32 @@
     box-shadow: 0 6px 20px rgba(246, 127, 35, 0.45);
   }
 
-  .btn-nav svg {
-    transition: transform 0.25s;
-  }
-
-  .btn-nav:hover svg {
-    transform: translateX(3px);
-  }
+  .btn-nav svg { transition: transform 0.25s; }
+  .btn-nav:hover svg { transform: translateX(3px); }
 
   /* HAMBURGER */
   .hamburger {
     display: none;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 5px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 6px;
+    padding: 8px;
     border-radius: 8px;
+    width: 40px;
+    height: 40px;
     transition: background 0.2s;
+    flex-shrink: 0; /* ← no se comprime nunca */
   }
 
   .hamburger:hover { background: rgba(0,0,0,0.05); }
 
   .hamburger span {
     display: block;
-    width: 24px;
+    width: 22px;
     height: 2px;
     background: #333;
     border-radius: 2px;
@@ -186,35 +185,31 @@
     transform-origin: center;
   }
 
-  /* Hamburger → X */
   .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
   .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-  /* MOBILE MENU */
+  /* MOBILE MENU — oculto por defecto (funciona en desktop y mobile) */
   .mobile-menu {
-    display: none;
-    flex-direction: column;
-    gap: 4px;
-    padding: 16px 20px 24px;
-    border-top: 1px solid rgba(0,0,0,0.07);
-    background: white;
-
-    max-height: 0;
     overflow: hidden;
+    max-height: 0;
     opacity: 0;
-    transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s ease, padding 0.3s ease;
+    background: white;
+    border-top: 1px solid rgba(0,0,0,0.07);
+    transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s ease;
+    /* SIN display:none — se controla solo con max-height/opacity */
   }
 
   .mobile-menu.open {
-    max-height: 400px;
+    max-height: 420px;
     opacity: 1;
   }
 
+  /* Padding interior solo cuando está abierto para no dejar espacio vacío */
   .mobile-links {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 12px 20px 0;
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -237,7 +232,8 @@
   }
 
   .btn-nav-mobile {
-    margin-top: 12px;
+    display: block;
+    margin: 12px 20px 20px;
     background: var(--color-naranja);
     color: white;
     padding: 13px 20px;
@@ -246,7 +242,6 @@
     font-weight: 600;
     font-size: 15px;
     text-align: center;
-    display: block;
     box-shadow: 0 4px 14px rgba(246, 127, 35, 0.35);
     transition: background 0.25s;
   }
@@ -255,10 +250,19 @@
 
   /* RESPONSIVE */
   @media (max-width: 768px) {
+    .header { padding: 0 16px; }
+
+    .container-header {
+      height: 60px; /* ← más compacto y proporcional en mobile */
+    }
+
+    .logo img {
+      height: 40px; /* ← logo proporcional al header mobile */
+    }
+
     .nav { display: none; }
     .btn-nav { display: none; }
     .hamburger { display: flex; }
-    .mobile-menu { display: flex; }
   }
 </style>
 
@@ -267,7 +271,6 @@
   const mobileMenu = document.getElementById('mobile-menu');
   const header = document.getElementById('header');
 
-  // Toggle mobile menu
   hamburger?.addEventListener('click', () => {
     const isOpen = mobileMenu?.classList.contains('open');
     mobileMenu?.classList.toggle('open');
@@ -275,7 +278,6 @@
     hamburger?.setAttribute('aria-expanded', String(!isOpen));
   });
 
-  // Close menu when clicking a link
   mobileMenu?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('open');
@@ -284,7 +286,6 @@
     });
   });
 
-  // Shadow on scroll
   window.addEventListener('scroll', () => {
     header?.classList.toggle('scrolled', window.scrollY > 10);
   });

@@ -198,7 +198,7 @@ import CtaContacto from '../components/CtaContacto.astro';
     justify-content: center;
     text-align: center;
     color: white;
-    margin-top: 72px;
+    /* margin-top: 72px; */
   }
 
   .overlay {
@@ -227,7 +227,7 @@ import CtaContacto from '../components/CtaContacto.astro';
   }
 
   .page-hero-content h1 {
-    font-size: clamp(28px, 5vw, 48px);
+    font-size: clamp(24px, 5vw, 48px);
     font-weight: 800;
     margin: 0 0 14px;
     letter-spacing: -0.5px;
@@ -239,7 +239,7 @@ import CtaContacto from '../components/CtaContacto.astro';
   }
 
   .page-hero-content p {
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     color: rgba(255,255,255,0.78);
     line-height: 1.7;
     margin: 0;
@@ -564,7 +564,7 @@ import CtaContacto from '../components/CtaContacto.astro';
 
   @media (max-width: 600px) {
     .contacto { padding: 56px 16px; }
-    .page-hero { height: 240px; }
+    .page-hero { height: 220px; }
     .contacto-form { padding: 28px 20px; }
     .mapa-embed { height: 280px; }
 

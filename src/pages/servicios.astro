@@ -1,0 +1,608 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import CtaContacto from '../components/CtaContacto.astro';
+import NuestrosClientes from '../components/NuestrosClientes.astro';
+---
+
+<Layout title="Servicios — APROSERVIS" description="Conoce todos los servicios especializados de APROSERVIS en construcción civil, estructuras metálicas, ingeniería y más.">
+
+  <Navbar />
+
+  <!-- HERO BANNER -->
+  <section class="page-hero">
+    <div class="overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        LO QUE HACEMOS
+      </span>
+      <h1>Nuestros <em>Servicios</em></h1>
+      <p>Soluciones especializadas en construcción civil, industrial y mecánica con altos estándares de calidad y seguridad.</p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="servicios">
+    <div class="container-servicios">
+
+      <!-- 1. CONSTRUCCIÓN CIVIL -->
+      <div class="servicio-bloque">
+        <div class="servicio-imagen">
+          <img src="/images/servicios/construccion-civil.jpg" alt="Construcción Civil" loading="lazy">
+          <div class="servicio-badge">01</div>
+        </div>
+        <div class="servicio-contenido">
+          <span class="serv-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            SERVICIO 01
+          </span>
+          <h2>Construcción Civil</h2>
+          <p>Ejecutamos obras civiles de todo tipo con materiales de alta calidad y procesos eficientes, garantizando resultados duraderos y seguros en cada proyecto.</p>
+          <ul class="serv-lista">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Mantenimiento y refacción de casas
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Mantenimiento de edificios y condominios
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Construcción de todo tipo de obras civiles
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Remodelaciones y ampliaciones
+            </li>
+          </ul>
+          <a href="/contacto" class="serv-btn">
+            Solicitar cotización
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. PINTADO INDUSTRIAL (invertido) -->
+      <div class="servicio-bloque invertido">
+        <div class="servicio-imagen">
+          <img src="/images/servicios/pintado.jpg" alt="Pintado Industrial" loading="lazy">
+          <div class="servicio-badge">02</div>
+        </div>
+        <div class="servicio-contenido">
+          <span class="serv-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            SERVICIO 02
+          </span>
+          <h2>Pintado Industrial</h2>
+          <p>Aplicamos técnicas avanzadas de pintado para obras civiles, equipos industriales y estructuras metálicas, garantizando durabilidad y protección.</p>
+          <ul class="serv-lista">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Sand Blasting y pintado convencional
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Pintado Airless de alta presión
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Señalización y pintado de equipos industriales
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Pintado de tanques, tuberías y estructuras metálicas
+            </li>
+          </ul>
+          <a href="/contacto" class="serv-btn">
+            Solicitar cotización
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. INGENIERÍA BÁSICA Y DE DETALLE -->
+      <div class="servicio-bloque">
+        <div class="servicio-imagen">
+          <img src="/images/servicios/ingenieria.jpg" alt="Ingeniería" loading="lazy">
+          <div class="servicio-badge">03</div>
+        </div>
+        <div class="servicio-contenido">
+          <span class="serv-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            SERVICIO 03
+          </span>
+          <h2>Ingeniería Básica y de Detalle</h2>
+          <p>Desarrollamos proyectos de ingeniería integrales bajo normas y reglamentos establecidos, desde estudios de campo hasta cálculos estructurales complejos.</p>
+          <ul class="serv-lista">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Estudios de campo y relevamientos
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Cálculos estructurales bajo normas vigentes
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Diseño de red contra incendio
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Ingeniería de estructuras metálicas y puentes grúa
+            </li>
+          </ul>
+          <a href="/contacto" class="serv-btn">
+            Solicitar cotización
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. SOLDADURA ALTA PRESIÓN (invertido) -->
+      <div class="servicio-bloque invertido">
+        <div class="servicio-imagen">
+          <img src="/images/servicios/soldadura.jpg" alt="Soldadura Alta Presión" loading="lazy">
+          <div class="servicio-badge">04</div>
+        </div>
+        <div class="servicio-contenido">
+          <span class="serv-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            SERVICIO 04
+          </span>
+          <h2>Soldadura para Alta Presión</h2>
+          <p>Contamos con mano de obra calificada y certificada para trabajos de soldadura bajo normas y procedimientos establecidos internacionalmente.</p>
+          <ul class="serv-lista">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Soldadura certificada bajo normas internacionales
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Soldadores calificados y certificados
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Procedimientos documentados y trazables
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Ensayos no destructivos de control de calidad
+            </li>
+          </ul>
+          <a href="/contacto" class="serv-btn">
+            Solicitar cotización
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5. ESTRUCTURAS METÁLICAS -->
+      <div class="servicio-bloque">
+        <div class="servicio-imagen">
+          <img src="/images/servicios/estructuras.jpg" alt="Estructuras Metálicas" loading="lazy">
+          <div class="servicio-badge">05</div>
+        </div>
+        <div class="servicio-contenido">
+          <span class="serv-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            SERVICIO 05
+          </span>
+          <h2>Estructuras Metálicas</h2>
+          <p>Diseñamos, fabricamos y montamos estructuras metálicas especiales para uso industrial, adaptándonos a los requerimientos específicos de cada proyecto.</p>
+          <ul class="serv-lista">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Naves industriales con perfiles angulares y vigas WF
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Puentes grúa mecánicos y motorizados
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Quemadores, tarimas y estructuras para elevadores
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Portakamps y unidades habitacionales móviles
+            </li>
+          </ul>
+          <a href="/contacto" class="serv-btn">
+            Solicitar cotización
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 6. PROVISIÓN DE SERVICIOS (invertido) -->
+      <div class="servicio-bloque invertido">
+        <div class="servicio-imagen">
+          <img src="/images/servicios/provision.jpg" alt="Provisión de Servicios" loading="lazy">
+          <div class="servicio-badge">06</div>
+        </div>
+        <div class="servicio-contenido">
+          <span class="serv-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            SERVICIO 06
+          </span>
+          <h2>Provisión de Servicios</h2>
+          <p>Ofrecemos una amplia gama de servicios complementarios para el sector industrial, incluyendo alquiler de equipos, limpieza de tanques e inspecciones especializadas.</p>
+          <ul class="serv-lista">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Alquiler de equipos y tanques (20.000 a 80.000 Lts.)
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Inertización y limpieza de tanques
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Inspección y ensayos no destructivos
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Calibración y certificación IBNORCA de válvulas
+            </li>
+          </ul>
+          <a href="/contacto" class="serv-btn">
+            Solicitar cotización
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 7. SISTEMAS CONTRA INCENDIO -->
+      <div class="servicio-bloque">
+        <div class="servicio-imagen">
+          <img src="/images/servicios/incendio.jpg" alt="Sistemas Contra Incendio" loading="lazy">
+          <div class="servicio-badge">07</div>
+        </div>
+        <div class="servicio-contenido">
+          <span class="serv-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            SERVICIO 07
+          </span>
+          <h2>Sistemas Contra Incendio</h2>
+          <p>Construimos y mantenemos sistemas contra incendio bajo normas internacionales de seguridad para el rubro industrial y petrolero.</p>
+          <ul class="serv-lista">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Diseño e instalación bajo normas internacionales
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Mantenimiento preventivo y correctivo
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Sistemas para sector industrial y petrolero
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Certificación y pruebas de funcionamiento
+            </li>
+          </ul>
+          <a href="/contacto" class="serv-btn">
+            Solicitar cotización
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 8. PRUEBAS HIDROSTÁTICAS (invertido) -->
+      <div class="servicio-bloque invertido">
+        <div class="servicio-imagen">
+          <img src="/images/servicios/pruebas.jpg" alt="Pruebas Hidrostáticas" loading="lazy">
+          <div class="servicio-badge">08</div>
+        </div>
+        <div class="servicio-contenido">
+          <span class="serv-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            SERVICIO 08
+          </span>
+          <h2>Pruebas Hidrostáticas e Hidráulicas</h2>
+          <p>Contamos con equipos que permiten realizar pruebas hasta 20.000 PSI, con autorización IBNORCA para tanques de combustible, GLP y otros sistemas.</p>
+          <ul class="serv-lista">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Pruebas hasta 20.000 PSI
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Certificación IBNORCA para tanques de combustible
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Pruebas en tanques de transporte de GLP y Bladders
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-naranja)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Pruebas neumáticas e hidráulicas especializadas
+            </li>
+          </ul>
+          <a href="/contacto" class="serv-btn">
+            Solicitar cotización
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<NuestrosClientes/>
+  <CtaContacto />
+  <Footer />
+
+</Layout>
+
+<style is:global>
+
+  /* ── HERO ── */
+  .page-hero {
+    position: relative;
+    height: 360px;
+    background: url("/images/cta-footer/subfooter.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /* margin-top: 72px; */
+  }
+
+  .page-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    padding: 0 20px;
+  }
+
+  .page-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-naranja);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .page-hero-content h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    margin: 0 0 14px;
+    letter-spacing: -0.5px;
+  }
+
+  .page-hero-content h1 em {
+    font-style: normal;
+    color: var(--color-naranja);
+  }
+
+  .page-hero-content p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* ── SERVICIOS ── */
+  .servicios {
+    padding: 80px 20px;
+    background: #f5f5f5;
+  }
+
+  .container-servicios {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* BLOQUE SERVICIO */
+  .servicio-bloque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 16px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+    transition: box-shadow 0.3s;
+  }
+
+  .servicio-bloque:hover {
+    box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+  }
+
+  /* Invertido: imagen a la derecha */
+  .servicio-bloque.invertido {
+    direction: rtl;
+  }
+
+  .servicio-bloque.invertido > * {
+    direction: ltr;
+  }
+
+  /* IMAGEN */
+  .servicio-imagen {
+    position: relative;
+    min-height: 380px;
+    overflow: hidden;
+    background: #ddd;
+  }
+
+  .servicio-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .servicio-bloque:hover .servicio-imagen img {
+    transform: scale(1.04);
+  }
+
+  /* NÚMERO BADGE */
+  .servicio-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 48px;
+    height: 48px;
+    background: var(--color-naranja);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 4px 14px rgba(246,127,35,0.4);
+  }
+
+  .servicio-bloque.invertido .servicio-badge {
+    left: auto;
+    right: 20px;
+  }
+
+  /* CONTENIDO */
+  .servicio-contenido {
+    padding: 48px 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .serv-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-naranja);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .servicio-contenido h2 {
+    font-size: clamp(22px, 2.5vw, 30px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+    margin: 0 0 16px;
+    line-height: 1.2;
+  }
+
+  .servicio-contenido > p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.75;
+    margin: 0 0 24px;
+  }
+
+  /* LISTA */
+  .serv-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .serv-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+  }
+
+  .serv-lista li svg {
+    flex-shrink: 0;
+  }
+
+  /* BOTÓN */
+  .serv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: var(--color-naranja);
+    color: white;
+    padding: 13px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    width: fit-content;
+    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+    box-shadow: 0 4px 16px rgba(246,127,35,0.35);
+  }
+
+  .serv-btn:hover {
+    background: #d96a10;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(246,127,35,0.45);
+  }
+
+  .serv-btn svg { transition: transform 0.25s; }
+  .serv-btn:hover svg { transform: translateX(4px); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .servicio-bloque,
+    .servicio-bloque.invertido {
+      grid-template-columns: 1fr;
+      direction: ltr;
+    }
+
+    .servicio-imagen {
+      min-height: 280px;
+    }
+
+    .servicio-bloque.invertido .servicio-badge {
+      left: 20px;
+      right: auto;
+    }
+
+    .servicio-contenido {
+      padding: 36px 28px;
+    }
+
+    .page-hero { height: 300px; }
+  }
+
+  @media (max-width: 560px) {
+    .servicios { padding: 56px 16px; }
+    .page-hero { height: 220px; }
+    .page-hero-content p {font-size: 14px}
+
+    .servicio-imagen { min-height: 220px; }
+
+    .servicio-contenido {
+      padding: 28px 20px;
+    }
+
+    .serv-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

@@ -53,7 +53,7 @@
       </div>
       <div class="stat-sep"></div>
       <div class="stat-item">
-        <strong>10+</strong>
+        <strong>5+</strong>
         <span>Años</span>
       </div>
       <div class="stat-sep"></div>
@@ -277,14 +277,18 @@
 
   /* RESPONSIVE */
   @media (max-width: 900px) {
+    .card-central{
+      border-left: 4px solid var(--color-naranja);
+    }
+
     .grid-destacar {
       grid-template-columns: 1fr;
       gap: 16px;
     }
 
-    .card-central {
-      order: -1; /* la card oscura primero en móvil */
-    }
+    /* .card-central {
+      order: -1; 
+    } */
 
     .stat-sep { display: none; }
 

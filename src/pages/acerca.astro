@@ -17,7 +17,7 @@ import CtaContacto from '../components/CtaContacto.astro';
         <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         QUIÉNES SOMOS
       </span>
-      <h1>Más de 10 años construyendo <em>confianza</em></h1>
+      <h1>Más de 5 años construyendo <em>confianza</em></h1>
       <p>APROSERVIS — Añez Proyectos & Servicios. Empresa boliviana comprometida con la excelencia en construcción civil, industrial y mecánica.</p>
     </div>
   </section>
@@ -152,7 +152,7 @@ import CtaContacto from '../components/CtaContacto.astro';
               <span>Proyectos ejecutados</span>
             </div>
             <div class="stat-box">
-              <strong>10+</strong>
+              <strong>5+</strong>
               <span>Años de experiencia</span>
             </div>
             <div class="stat-box">
@@ -377,7 +377,7 @@ import CtaContacto from '../components/CtaContacto.astro';
     justify-content: center;
     text-align: center;
     color: white;
-    margin-top: 72px;
+    /* margin-top: 72px; */
   }
 
   .page-hero .overlay {
@@ -760,6 +760,7 @@ import CtaContacto from '../components/CtaContacto.astro';
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
     transition: transform 0.4s ease;
   }
 
@@ -770,11 +771,11 @@ import CtaContacto from '../components/CtaContacto.astro';
   .miembro-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(246,127,35,0.85);
+    background:linear-gradient(to top, rgba(0,0,0,0.45) 0% transparent 60%);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 16px;
     opacity: 0;
     transition: opacity 0.3s;
   }
@@ -923,29 +924,56 @@ import CtaContacto from '../components/CtaContacto.astro';
     }
 
     .page-hero { height: 300px; }
+    .historia-card {margin-bottom: 16px;}
   }
 
-  @media (max-width: 600px) {
-    .sobre-nosotros,
-    .valores,
-    .equipo,
-    .politica {
-      padding: 64px 16px;
-    }
-
-    .page-hero { height: 260px; }
-
-    .valores-grid,
-    .equipo-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .stats-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .historia-card {
-      padding: 24px 20px;
-    }
+  @media (max-width: 768px) {
+    .miembro-foto {height: 200px;}
+    .pilares{gap:14px;}
+    .politica-texto{text-align: center;}
+    .politica-texto .section-label{justify-content: center;}
   }
+
+ @media (max-width: 600px) {
+  .sobre-nosotros,
+  .valores,
+  .equipo,
+  .politica {
+    padding: 56px 16px;
+  }
+
+  .page-hero { height: 220px; }
+  .page-hero-content p { font-size: 14px; }
+
+  /* Valores: 1 columna en mobile */
+  .valores-grid { grid-template-columns: 1fr; }
+  .valor-card { padding: 24px 20px; }
+
+  /* Equipo: 1 columna en mobile, imagen más generosa */
+  .equipo-grid { grid-template-columns: 1fr; }
+  .miembro-foto { height: 260px; }
+
+  /* Stats: 2x2 compacto */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .stat-box { padding: 16px 10px; }
+  .stat-box strong { font-size: 18px; }
+
+  /* Historia */
+  .historia-card { padding: 24px 18px; }
+
+  /* Política: 1 columna */
+  .politica-grid { gap: 32px; }
+  .politica-texto { text-align: center; }
+  .politica-texto .section-label { justify-content: center; }
+
+  /* Section headers */
+  .section-header { margin-bottom: 36px; }
+
+  /* Pilar: alinear ícono con texto más compacto */
+  .pilar { padding: 16px; }
+  .pilar-icon { width: 38px; height: 38px; min-width: 38px; }
+}
 </style>
