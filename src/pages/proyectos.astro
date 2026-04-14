@@ -1,123 +1,193 @@
-<section class="proyectos">
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import CtaContacto from '../components/CtaContacto.astro';
+import NuestrosClientes from '../components/NuestrosClientes.astro';
+---
 
-  <div class="container-proyectos">
+<Layout title="Proyectos — APROSERVIS" description="Conoce nuestros proyectos de construcción civil, estructuras metálicas, ingeniería y seguridad industrial en Bolivia.">
 
-    <!-- FILTROS -->
-    <div class="proyectos-filtros">
-      <button class="filtro activo" data-filtro="todos">Todos</button>
-      <button class="filtro" data-filtro="civil">Construcción Civil</button>
-      <button class="filtro" data-filtro="metalica">Estructuras Metálicas</button>
-      <button class="filtro" data-filtro="industrial">Industrial</button>
-      <button class="filtro" data-filtro="ingenieria">Ingeniería</button>
+  <Navbar />
+
+  <!-- HERO BANNER -->
+  <section class="page-hero">
+    <div class="overlay"></div>
+    <div class="page-hero-content">
+      <span class="page-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        PORTAFOLIO
+      </span>
+      <h1>Nuestros <em>Proyectos</em></h1>
+      <p>Cada proyecto refleja nuestro compromiso con la calidad, la innovación y la excelencia en ingeniería y construcción.</p>
     </div>
+  </section>
 
-    <!-- GRID PROYECTOS -->
-    <div class="grid-proyectos">
+  <!-- SECCIÓN PROYECTOS -->
+  <section class="proyectos">
+    <div class="container-proyectos">
 
-      <div class="proyecto" data-categoria="civil">
-        <div class="proyecto-img">
-          <img src="/images/proyectos/proyecto1.png" alt="Obra Civil" loading="lazy">
-          <div class="proyecto-overlay">
-            <span class="proyecto-tag">Construcción Civil</span>
-            <h3>Vivienda Moderna</h3>
-            <p>Comarapa, Bolivia</p>
-            <a href="#" class="proyecto-btn">Ver detalle →</a>
-          </div>
-        </div>
+      <!-- FILTROS -->
+      <div class="proyectos-filtros">
+        <button class="filtro activo" data-filtro="todos"><span>Todos</span><span class="count">6</span></button>
+        <button class="filtro" data-filtro="civil"><span>Construcción Civil</span><span class="count">2</span></button>
+        <button class="filtro" data-filtro="metalica"><span>Estructuras Metálicas</span><span class="count">2</span></button>
+        <button class="filtro" data-filtro="industrial"><span>Industrial</span><span class="count">1</span></button>
+        <button class="filtro" data-filtro="ingenieria"><span>Ingeniería</span><span class="count">1</span></button>
       </div>
 
-      <div class="proyecto" data-categoria="metalica">
-        <div class="proyecto-img">
-          <img src="/images/proyectos/proyecto2.png" alt="Nave Industrial" loading="lazy">
-          <div class="proyecto-overlay">
-            <span class="proyecto-tag">Estructuras Metálicas</span>
-            <h3>Nave Industrial</h3>
-            <p>Santa Cruz, Bolivia</p>
-            <a href="#" class="proyecto-btn">Ver detalle →</a>
+      <!-- GRID PROYECTOS -->
+      <div class="grid-proyectos">
+
+        <div class="proyecto" data-categoria="civil">
+          <div class="proyecto-img">
+            <img src="/images/proyectos/proyecto1.png" alt="Vivienda Moderna" loading="lazy">
+            <div class="proyecto-overlay">
+              <span class="proyecto-tag">Construcción Civil</span>
+              <h3>Vivienda Moderna</h3>
+              <p>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Comarapa, Bolivia
+              </p>
+              <a href="#" class="proyecto-btn">Ver detalle
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
           </div>
         </div>
+
+        <div class="proyecto" data-categoria="metalica">
+          <div class="proyecto-img">
+            <img src="/images/proyectos/proyecto2.png" alt="Nave Industrial" loading="lazy">
+            <div class="proyecto-overlay">
+              <span class="proyecto-tag">Estructuras Metálicas</span>
+              <h3>Nave Industrial</h3>
+              <p>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Santa Cruz, Bolivia
+              </p>
+              <a href="#" class="proyecto-btn">Ver detalle
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto" data-categoria="industrial">
+          <div class="proyecto-img">
+            <img src="/images/proyectos/proyecto3.png" alt="Sistema Contra Incendio" loading="lazy">
+            <div class="proyecto-overlay">
+              <span class="proyecto-tag">Seguridad Industrial</span>
+              <h3>Sistema Contra Incendio</h3>
+              <p>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Cochabamba, Bolivia
+              </p>
+              <a href="#" class="proyecto-btn">Ver detalle
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto" data-categoria="ingenieria">
+          <div class="proyecto-img">
+            <img src="/images/proyectos/proyecto4.png" alt="Ingeniería de Detalle" loading="lazy">
+            <div class="proyecto-overlay">
+              <span class="proyecto-tag">Ingeniería de Detalle</span>
+              <h3>Proyecto Estructural</h3>
+              <p>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Santa Cruz, Bolivia
+              </p>
+              <a href="#" class="proyecto-btn">Ver detalle
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto" data-categoria="civil">
+          <div class="proyecto-img">
+            <img src="/images/proyectos/proyecto5.png" alt="Edificio Residencial" loading="lazy">
+            <div class="proyecto-overlay">
+              <span class="proyecto-tag">Construcción Civil</span>
+              <h3>Edificio Residencial</h3>
+              <p>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Comarapa, Bolivia
+              </p>
+              <a href="#" class="proyecto-btn">Ver detalle
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto" data-categoria="metalica">
+          <div class="proyecto-img">
+            <img src="/images/proyectos/proyecto6.png" alt="Puente Grúa" loading="lazy">
+            <div class="proyecto-overlay">
+              <span class="proyecto-tag">Estructuras Metálicas</span>
+              <h3>Puente Grúa Motorizado</h3>
+              <p>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Santa Cruz, Bolivia
+              </p>
+              <a href="#" class="proyecto-btn">Ver detalle
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="proyecto" data-categoria="industrial">
-        <div class="proyecto-img">
-          <img src="/images/proyectos/proyecto3.png" alt="Sistema Contra Incendio" loading="lazy">
-          <div class="proyecto-overlay">
-            <span class="proyecto-tag">Seguridad Industrial</span>
-            <h3>Sistema Contra Incendio</h3>
-            <p>Cochabamba, Bolivia</p>
-            <a href="#" class="proyecto-btn">Ver detalle →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proyecto" data-categoria="ingenieria">
-        <div class="proyecto-img">
-          <img src="/images/proyectos/proyecto4.png" alt="Ingeniería de Detalle" loading="lazy">
-          <div class="proyecto-overlay">
-            <span class="proyecto-tag">Ingeniería de Detalle</span>
-            <h3>Proyecto Estructural</h3>
-            <p>Santa Cruz, Bolivia</p>
-            <a href="#" class="proyecto-btn">Ver detalle →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proyecto" data-categoria="civil">
-        <div class="proyecto-img">
-          <img src="/images/proyectos/proyecto5.png" alt="Edificio Residencial" loading="lazy">
-          <div class="proyecto-overlay">
-            <span class="proyecto-tag">Construcción Civil</span>
-            <h3>Edificio Residencial</h3>
-            <p>Comarapa, Bolivia</p>
-            <a href="#" class="proyecto-btn">Ver detalle →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proyecto" data-categoria="metalica">
-        <div class="proyecto-img">
-          <img src="/images/proyectos/proyecto6.png" alt="Puente Grúa" loading="lazy">
-          <div class="proyecto-overlay">
-            <span class="proyecto-tag">Estructuras Metálicas</span>
-            <h3>Puente Grúa Motorizado</h3>
-            <p>Santa Cruz, Bolivia</p>
-            <a href="#" class="proyecto-btn">Ver detalle →</a>
-          </div>
-        </div>
+      <!-- BOTÓN CTA -->
+      <div class="proyectos-cta">
+        <a href="/contacto" class="btn-cotizar">
+          Solicitar Cotización
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
 
     </div>
+  </section>
 
-    <!-- BOTÓN -->
-    <div class="proyectos-cta">
-      <a href="/contacto" class="btn-cotizar">
-        Solicitar Cotización
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
+  <!-- <NuestrosClientes /> -->
+  <CtaContacto />
+  <Footer />
 
-  </div>
-
-</section>
+</Layout>
 
 <style is:global>
-  .proyectos {
-    padding: 100px 20px;
-    background: white;
-  }
 
-  .container-proyectos {
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  /* ENCABEZADO */
-  .proyectos-header {
+  /* ── HERO ── */
+  .page-hero {
+    position: relative;
+    height: 360px;
+    background: url("/images/cta-footer/subfooter.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 48px;
+    color: white;
   }
 
-  .proyectos-label {
+  .page-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    padding: 0 20px;
+  }
+
+  .page-label {
     display: inline-flex;
     align-items: center;
     gap: 7px;
@@ -129,58 +199,129 @@
     margin-bottom: 14px;
   }
 
-  .proyectos-header h2 {
-    font-size: clamp(28px, 4vw, 42px);
+  .page-hero-content h1 {
+    font-size: clamp(32px, 5vw, 52px);
     font-weight: 800;
-    color: #1a1a1a;
+    margin: 0 0 14px;
     letter-spacing: -0.5px;
-    margin: 0 0 16px;
   }
 
-  .proyectos-header h2 em {
+  .page-hero-content h1 em {
     font-style: normal;
     color: var(--color-naranja);
   }
 
-  .proyectos-header p {
-    max-width: 560px;
-    margin: 0 auto;
-    color: #777;
+  .page-hero-content p {
     font-size: 16px;
+    color: rgba(255,255,255,0.78);
     line-height: 1.7;
+    margin: 0;
   }
 
-  /* FILTROS */
+  /* ── SECCIÓN PROYECTOS ── */
+  .proyectos {
+    padding: 80px 20px;
+    background: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .proyectos::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(246,127,35,0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(246,127,35,0.02) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .container-proyectos {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── FILTROS ── */
   .proyectos-filtros {
     display: flex;
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
   }
 
   .filtro {
-    padding: 9px 20px;
+    padding: 10px 22px;
     border-radius: 50px;
-    border: 1.5px solid #e8e8e8;
+    border: 1.5px solid #e0e0e0;
     background: white;
     color: #555;
-    font-size: 14px;
+    font-size: 13.5px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
     font-family: 'Outfit', sans-serif;
     white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .filtro::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-naranja);
+    border-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: 0;
+  }
+
+  .filtro span {
+    position: relative;
+    z-index: 1;
   }
 
   .filtro:hover {
     border-color: var(--color-naranja);
     color: var(--color-naranja);
+    transform: translateY(-1px);
+  }
+
+  .filtro.activo::before {
+    transform: scaleX(1);
   }
 
   .filtro.activo {
-    background: var(--color-naranja);
     border-color: var(--color-naranja);
+    color: white;
+    box-shadow: 0 4px 16px rgba(246,127,35,0.35);
+  }
+
+  .filtro.activo:hover {
+    color: white;
+  }
+
+  .filtro .count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.06);
+    margin-left: 6px;
+    padding: 0 6px;
+    transition: all 0.3s;
+  }
+
+  .filtro.activo .count {
+    background: rgba(255,255,255,0.25);
     color: white;
   }
 
@@ -188,7 +329,7 @@
     .proyectos-filtros {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      gap: 8px;
     }
 
     .filtro {
@@ -202,25 +343,50 @@
     }
   }
 
-  /* GRID */
+  /* ── GRID ── */
   .grid-proyectos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 22px;
+    position: relative;
   }
 
-  /* CARD */
+  /* ── CARD ── */
   .proyecto {
-    border-radius: 14px;
+    border-radius: 16px;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(40px) scale(0.97);
+    transition: opacity 0.5s cubic-bezier(0.22,1,0.36,1),
+                transform 0.5s cubic-bezier(0.22,1,0.36,1);
+    will-change: transform, opacity;
+  }
+
+  .proyecto.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .proyecto.hiding {
+    opacity: 0;
+    transform: translateY(20px) scale(0.94);
+    pointer-events: none;
+    position: absolute;
+    visibility: hidden;
   }
 
   .proyecto-img {
     position: relative;
-    height: 280px;
+    height: 300px;
     overflow: hidden;
-    border-radius: 14px;
-    background: #eee;
+    border-radius: 16px;
+    background: #e5e5e5;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    transition: box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .proyecto:hover .proyecto-img {
+    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
   }
 
   .proyecto-img img {
@@ -228,80 +394,122 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.5s ease;
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .proyecto:hover .proyecto-img img {
-    transform: scale(1.06);
+    transform: scale(1.08);
   }
 
-  /* OVERLAY */
+  /* ── OVERLAY ── */
   .proyecto-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
-    padding: 24px;
+    background: linear-gradient(
+      to top,
+      rgba(0,0,0,0.88) 0%,
+      rgba(0,0,0,0.4) 45%,
+      rgba(0,0,0,0.05) 70%,
+      transparent 100%
+    );
+    padding: 28px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 6px;
     opacity: 0;
-    transition: opacity 0.35s ease;
+    transition: opacity 0.4s ease;
   }
 
   .proyecto:hover .proyecto-overlay {
     opacity: 1;
   }
 
+  .proyecto-overlay > * {
+    transform: translateY(12px);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.22,1,0.36,1),
+                opacity 0.4s ease;
+  }
+
+  .proyecto:hover .proyecto-overlay > *:nth-child(1) { transform: translateY(0); opacity: 1; transition-delay: 0.05s; }
+  .proyecto:hover .proyecto-overlay > *:nth-child(2) { transform: translateY(0); opacity: 1; transition-delay: 0.1s; }
+  .proyecto:hover .proyecto-overlay > *:nth-child(3) { transform: translateY(0); opacity: 1; transition-delay: 0.15s; }
+  .proyecto:hover .proyecto-overlay > *:nth-child(4) { transform: translateY(0); opacity: 1; transition-delay: 0.2s; }
+
   .proyecto-tag {
     display: inline-block;
     background: var(--color-naranja);
     color: white;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    padding: 4px 10px;
-    border-radius: 4px;
+    padding: 5px 12px;
+    border-radius: 5px;
     width: fit-content;
+    font-family: 'Outfit', sans-serif;
   }
 
   .proyecto-overlay h3 {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     margin: 0;
+    letter-spacing: -0.3px;
   }
 
   .proyecto-overlay p {
-    color: rgba(255,255,255,0.65);
+    color: rgba(255,255,255,0.55);
     font-size: 13px;
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .proyecto-overlay p svg {
+    width: 13px;
+    height: 13px;
+    opacity: 0.6;
   }
 
   .proyecto-btn {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     color: white;
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid rgba(255,255,255,0.4);
-    padding-bottom: 2px;
     width: fit-content;
-    margin-top: 4px;
-    transition: border-color 0.25s, color 0.25s;
+    margin-top: 6px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: all 0.3s ease;
+    font-family: 'Outfit', sans-serif;
   }
 
   .proyecto-btn:hover {
-    color: var(--color-naranja);
+    background: var(--color-naranja);
     border-color: var(--color-naranja);
+    transform: translateX(3px);
   }
 
-  /* CTA BOTÓN */
+  .proyecto-btn svg {
+    transition: transform 0.3s ease;
+  }
+
+  .proyecto-btn:hover svg {
+    transform: translateX(3px);
+  }
+
+  /* ── CTA ── */
   .proyectos-cta {
-    margin-top: 52px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
   }
@@ -309,37 +517,56 @@
   .btn-cotizar {
     display: inline-flex;
     align-items: center;
-    gap: 9px;
+    gap: 10px;
     background: var(--color-naranja);
     color: white;
-    padding: 14px 30px;
-    border-radius: 8px;
+    padding: 16px 34px;
+    border-radius: 12px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 15px;
-    transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
-    box-shadow: 0 4px 16px rgba(246, 127, 35, 0.35);
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.2px;
+    transition: all 0.35s cubic-bezier(0.22,1,0.36,1);
+    box-shadow: 0 4px 20px rgba(246,127,35,0.35);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-cotizar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .btn-cotizar:hover::before {
+    opacity: 1;
   }
 
   .btn-cotizar:hover {
     background: #d96a10;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(246, 127, 35, 0.45);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 32px rgba(246,127,35,0.5);
   }
 
-  .btn-cotizar svg { transition: transform 0.25s; }
-  .btn-cotizar:hover svg { transform: translateX(4px); }
+  .btn-cotizar svg { transition: transform 0.3s ease; }
+  .btn-cotizar:hover svg { transform: translateX(5px); }
 
-  /* RESPONSIVE */
+  /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     .grid-proyectos {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .page-hero { height: 300px; }
   }
 
   @media (max-width: 560px) {
     .proyectos {
-      padding: 64px 16px;
+      padding: 56px 16px;
     }
 
     .grid-proyectos {
@@ -347,23 +574,21 @@
       gap: 16px;
     }
 
-    /* Overlay siempre visible en móvil */
     .proyecto-overlay {
       opacity: 1;
     }
 
+    .proyecto-overlay > * {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
     .proyecto-img {
-      height: 240px;
+      height: 260px;
     }
 
-    .proyectos-filtros {
-      gap: 8px;
-    }
-
-    .filtro {
-      padding: 8px 14px;
-      font-size: 13px;
-    }
+    .page-hero { height: 220px; }
+    .page-hero-content p { font-size: 14px; }
   }
 </style>
 
@@ -371,23 +596,54 @@
   const filtros = document.querySelectorAll('.filtro');
   const proyectos = document.querySelectorAll('.proyecto');
 
-//   filtros.forEach(btn => {
-//     btn.addEventListener('click', () => {
-//       // Actualizar botón activo
-//       filtros.forEach(f => f.classList.remove('activo'));
-//       btn.classList.add('activo');
+  // Intersection Observer: entrada escalonada
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const delay = Array.from(proyectos).indexOf(el) * 100;
+        setTimeout(() => el.classList.add('visible'), delay);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.15 });
 
-//       const filtro = btn.dataset.filtro;
+  proyectos.forEach(p => observer.observe(p));
 
-//       proyectos.forEach(p => {
-//         const categoria = p.dataset.categoria;
-//         if (filtro === 'todos' || categoria === filtro) {
-//           p.style.display = 'block';
-//           p.style.animation = 'fadeIn 0.3s ease';
-//         } else {
-//           p.style.display = 'none';
-//         }
-//       });
-//     });
-//   });
+  // Filtros funcionales
+  filtros.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filtros.forEach(f => f.classList.remove('activo'));
+      btn.classList.add('activo');
+
+      const filtro = btn.dataset.filtro;
+      let visibleCount = 0;
+
+      proyectos.forEach((p) => {
+        const categoria = p.dataset.categoria;
+        const shouldShow = filtro === 'todos' || categoria === filtro;
+
+        if (shouldShow) {
+          p.classList.remove('hiding');
+          p.style.display = '';
+          setTimeout(() => {
+            p.classList.add('visible');
+            p.style.transitionDelay = `${visibleCount * 80}ms`;
+          }, 10);
+          visibleCount++;
+        } else {
+          p.classList.remove('visible');
+          p.classList.add('hiding');
+          p.style.transitionDelay = '0ms';
+          setTimeout(() => {
+            p.style.display = 'none';
+          }, 350);
+        }
+      });
+
+      setTimeout(() => {
+        proyectos.forEach(p => p.style.transitionDelay = '0ms');
+      }, visibleCount * 80 + 500);
+    });
+  });
 </script>

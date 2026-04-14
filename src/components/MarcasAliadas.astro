@@ -1,0 +1,225 @@
+---
+// MarcasAliadas.astro — Carrusel automático de logos de marcas/empresas aliadas
+const clientes = [
+  { nombre: "Cliente 1", logo: "/images/logo-clientes/logo_ypfb.png" },
+  { nombre: "Cliente 2", logo: "/images/logo-clientes/logo_cre.png" },
+  { nombre: "Cliente 3", logo: "/images/logo-clientes/logo_biopetrol.png" },
+  { nombre: "Cliente 4", logo: "/images/logo-clientes/logo_genex.png" },
+  { nombre: "Cliente 5", logo: "/images/logo-clientes/logo_saguapac.png" },
+  { nombre: "Cliente 6", logo: "/images/logo-clientes/logo_azucarero-guabira.png" },
+];
+---
+
+<section class="clientes">
+  <div class="container-clientes">
+
+    <div class="clientes-header">
+      <span class="clientes-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="var(--color-naranja)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        CONFÍAN EN NOSOTROS
+      </span>
+      <h2>Empresas que <em>trabajan</em> con nosotros</h2>
+      <p>Nos respaldan años de trabajo con empresas líderes del sector industrial, petrolero y de construcción en Bolivia.</p>
+    </div>
+
+    <!-- CARRUSEL -->
+    <div class="carrusel-wrapper">
+      <div class="carrusel-fade carrusel-fade--left"></div>
+      <div class="carrusel-fade carrusel-fade--right"></div>
+
+      <div class="carrusel-track">
+        <!-- Se duplican los logos para el loop infinito -->
+        {[...clientes, ...clientes].map((c) => (
+          <div class="carrusel-item">
+            <img src={c.logo} alt={c.nombre} loading="lazy" />
+          </div>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style is:global>
+  /* ── SECCIÓN ── */
+  .clientes {
+    padding: 80px 20px;
+    background: white;
+    overflow: hidden;
+  }
+
+  .container-clientes {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* ── HEADER ── */
+  .clientes-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .clientes-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-naranja);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .clientes-header h2 {
+    font-size: clamp(24px, 4vw, 38px);
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+    margin: 0 0 14px;
+    line-height: 1.2;
+  }
+
+  .clientes-header h2 em {
+    font-style: normal;
+    color: var(--color-naranja);
+  }
+
+  .clientes-header p {
+    max-width: 520px;
+    margin: 0 auto;
+    color: #888;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ── CARRUSEL ── */
+  .carrusel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Fade en los bordes */
+  .carrusel-fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .carrusel-fade--left {
+    left: 0;
+    background: linear-gradient(to right, white 0%, transparent 100%);
+  }
+
+  .carrusel-fade--right {
+    right: 0;
+    background: linear-gradient(to left, white 0%, transparent 100%);
+  }
+
+  /* Track animado */
+  .carrusel-track {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: max-content;
+    animation: scrollCarrusel 25s linear infinite;
+  }
+
+  .carrusel-track:hover {
+    animation-play-state: paused;
+  }
+
+  /* Item */
+  .carrusel-item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: #f9f9f9;
+    border: 1.5px solid #f0f0f0;
+    transition: all 0.35s ease;
+  }
+
+  .carrusel-item:hover {
+    border-color: rgba(246,127,35,0.25);
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transform: translateY(-3px);
+  }
+
+  .carrusel-item img {
+    max-height: 48px;
+    max-width: 140px;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.55);
+    transition: filter 0.35s ease;
+  }
+
+  .carrusel-item:hover img {
+    filter: grayscale(0%) opacity(1);
+  }
+
+  /* ── ANIMACIÓN ── */
+  @keyframes scrollCarrusel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .clientes {
+      padding: 56px 16px;
+    }
+
+    .carrusel-track {
+      gap: 40px;
+      animation-duration: 18s;
+    }
+
+    .carrusel-item {
+      height: 65px;
+      padding: 10px 16px;
+    }
+
+    .carrusel-item img {
+      max-height: 38px;
+      max-width: 110px;
+    }
+
+    .carrusel-fade {
+      width: 50px;
+    }
+
+    .clientes-header h2 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carrusel-track {
+      gap: 28px;
+      animation-duration: 14s;
+    }
+
+    .carrusel-item {
+      height: 56px;
+      padding: 8px 14px;
+    }
+
+    .carrusel-item img {
+      max-height: 32px;
+      max-width: 90px;
+    }
+  }
+</style>
