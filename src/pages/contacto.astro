@@ -41,14 +41,6 @@ import CtaContacto from '../components/CtaContacto.astro';
 
           <form id="form-contacto" novalidate>
 
-            <!-- Web3Forms Access Key — reemplaza con tu key real -->
-            <input type="hidden" name="access_key" value="f591bda8-1623-45e7-9ea1-e2c6042ba836">
-
-            <!-- Configuración del email -->
-            <input type="hidden" name="subject" value="Nueva solicitud de cotización — APROSERVIS">
-            <input type="hidden" name="from_name" value="Sitio Web APROSERVIS">
-            <input type="hidden" name="replyto" value="">
-
             <!-- Honeypot anti-spam -->
             <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
 
@@ -76,7 +68,7 @@ import CtaContacto from '../components/CtaContacto.astro';
                 <label for="email">Correo electrónico *</label>
                 <div class="input-wrap">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                  <input type="email" id="email" name="email" placeholder="tucorreo@gmail.com" required>
+                  <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
                 </div>
                 <span class="error-msg" id="error-email">Ingresa un correo válido</span>
               </div>
@@ -814,24 +806,17 @@ import CtaContacto from '../components/CtaContacto.astro';
       if (btnText) btnText.style.display = 'none';
       if (btnLoading) btnLoading.style.display = 'inline-flex';
 
-      // Enviar como JSON con timestamp único
-      var accessKey = form.querySelector('input[name="access_key"]').value;
-
+      // Enviar al backend PHP
       var payload = {
-        access_key: accessKey,
-        subject: 'Nueva solicitud de cotización — APROSERVIS',
-        from_name: 'Sitio Web APROSERVIS',
-        replyto: email,
         nombre: nombre,
         empresa: document.getElementById('empresa').value.trim() || 'No especificada',
         email: email,
         telefono: telefono,
-        servicio: servicio || 'No seleccionado',
-        mensaje: mensaje,
-        _timestamp: new Date().toISOString()
+        servicio: document.getElementById('servicio').value || 'No seleccionado',
+        mensaje: mensaje
       };
 
-      fetch('https://api.web3forms.com/submit', {
+      fetch('/api/contacto.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
